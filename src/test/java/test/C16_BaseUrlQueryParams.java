@@ -59,8 +59,6 @@ public class C16_BaseUrlQueryParams extends herOkuAppBaseURL {
         response.then().assertThat().statusCode(200).body("bookingid",notNullValue());
 
 
-
-
     }
 
     public void get03(){
