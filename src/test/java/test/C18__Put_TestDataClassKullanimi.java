@@ -65,6 +65,7 @@ public class C18__Put_TestDataClassKullanimi extends jsonPlaceBaseUrl{
           //4- Assertion İşlemi
           JsonPath respJP=response.jsonPath();
           response.prettyPeek();
+          System.out.println("***********************");
           System.out.println(response.getHeader("Connection"));
 
           assertEquals(testDataJSONPlace.okStatusKodu,response.getStatusCode());
