@@ -19,8 +19,8 @@ public class C15_BaseUrlJsonPlaceHolder extends jsonPlaceBaseUrl {
     //gonderdigimizde donen response’un status code’unun 200 oldugunu ve response
     //body’sinin null oldugunu test edin
 
-}
-/*
+
+
   @Test
     public void get01(){
         //1- https://jsonplaceholder.typicode.com/posts endpointine bir GET request
@@ -32,8 +32,7 @@ public class C15_BaseUrlJsonPlaceHolder extends jsonPlaceBaseUrl {
                 .body("id", hasSize(100));
     }
 
-    private <T, R> ValidatableResponseOptionsImpl<T,R> given() {
-    }
+
 
     @Test
     public void get02(){
@@ -55,4 +54,4 @@ public class C15_BaseUrlJsonPlaceHolder extends jsonPlaceBaseUrl {
         response.then().assertThat().statusCode(200)
                 .body("title",nullValue(),"id",nullValue(),"userId",nullValue(),"body",nullValue());
     }
- */
+}
