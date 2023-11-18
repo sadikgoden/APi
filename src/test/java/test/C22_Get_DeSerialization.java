@@ -20,7 +20,6 @@ public class C22_Get_DeSerialization extends DummyBaseUrl {
     request gonderdigimizde donen response’un status code’unun 200,
     content Type’inin application/json ve body’sinin asagidaki gibi
     oldugunu test edin.
-
     Response Body
     {
     "status":"success",
@@ -31,10 +30,8 @@ public class C22_Get_DeSerialization extends DummyBaseUrl {
             "employee_age":66,
             "profile_image":""
             },
-    "message":"Successfully! Record has been fetched."
-    }
+    "message":"Successfully! Record has been fetched." }
      */
-
     @Test
     public void get01(){
         specDummy.pathParams("pp1","api","pp2","v1","pp3","employee","pp4",3);
@@ -57,7 +54,7 @@ public class C22_Get_DeSerialization extends DummyBaseUrl {
         assertEquals(((Map)(expBody.get("data"))).get("employee_salary"),((Map)(respMAP.get("data"))).get("employee_salary"));
         assertEquals(((Map)(expBody.get("data"))).get("employee_age"),((Map)(respMAP.get("data"))).get("employee_age"));
         assertEquals(((Map)(expBody.get("data"))).get("profile_image"),((Map)(respMAP.get("data"))).get("profile_image"));
-
+      //  System.out.println(respMAP);
         // id içinde de bir bilgi olsaydı;
         //assertEquals(((Map)(((Map)(expBody.get("data"))).get("id"))).get("number"),((Map)(respMAP.get("data"))).get("id"));
 

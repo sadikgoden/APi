@@ -52,9 +52,7 @@ public class JsonPlaceRequestBodyPOJO {
         this.id = id;
     }
 
-
     //3) Tum parametreleri iceren bir constructor olusturalim
-
 
     public JsonPlaceRequestBodyPOJO(String title, String body, int userId, int id) {
         this.title = title;
@@ -80,4 +78,5 @@ public class JsonPlaceRequestBodyPOJO {
                 ", id=" + id +
                 '}';
     }
+
 }
